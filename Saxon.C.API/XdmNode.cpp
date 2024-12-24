@@ -295,7 +295,7 @@ XdmNode **XdmNode::axisNodes(EnumXdmAxis axis) {
   if (results == nullptr) {
     return nullptr;
   }
-  axisCount = results[0];
+  axisCount = (int) results[0];
   if (axisCount == 0) {
     return nullptr;
   }

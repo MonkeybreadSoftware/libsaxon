@@ -136,7 +136,7 @@ void XQueryProcessor::declareNamespace(const char *prefix, const char *uri) {
     return;
   } else {
     // setProperty("ns-prefix", uri);
-    int s = properties.size();
+    int s = (int) properties.size();
     std::string skey = std::string("ns-prefix:") + prefix;
     properties.insert(
         std::pair<std::string, std::string>(skey, std::string(uri)));

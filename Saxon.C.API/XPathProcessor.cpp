@@ -361,7 +361,7 @@ bool XPathProcessor::removeParameter(const char *name) {
 
 void XPathProcessor::setProperty(const char *name, const char *value) {
     if (name != nullptr) {
-        int s = properties.size();
+        int s = (int) properties.size();
         std::string skey = std::string(name);
         properties.insert(std::pair<std::string, std::string>(
                 skey, std::string((value == nullptr ? "" : value))));

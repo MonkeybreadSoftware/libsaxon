@@ -75,7 +75,7 @@ XdmValue::XdmValue(int64_t val, bool arr) {
     return;
   }
 
-  int xdmSizei = results[0]; //first value represents the size of the results array
+  int xdmSizei = (int) results[0]; //first value represents the size of the results array
   values_cap = xdmSizei;
   values = new XdmItem *[values_cap];
   relinquished_values = new char[values_cap];
