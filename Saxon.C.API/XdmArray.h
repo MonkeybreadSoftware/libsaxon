@@ -42,7 +42,7 @@ public:
   /**
    * Destructor for XdmArray
    */
-  virtual ~XdmArray() {}
+  virtual ~XdmArray() override {}
 
   //! XdmArray constructor which is used a wrapper class for the Java XdmArray
   //! object - internal use

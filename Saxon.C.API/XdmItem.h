@@ -56,7 +56,7 @@ public:
   /**
    * Destructor for XdmItem
    */
-  virtual ~XdmItem();
+  virtual ~XdmItem() override;
 
   //! Increment reference count of this XdmItem - Memory management - Internal
   //! use only

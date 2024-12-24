@@ -45,7 +45,7 @@ public:
   /**
    * Destructor for XdmMap
    */
-  virtual ~XdmMap() {}
+  virtual ~XdmMap() override {}
 
   //! XdmMap constructor which is a wrapper object from the Java XdmMap object -
   //! internal use
@@ -226,17 +226,17 @@ public:
    * @return true if the item is a Xdm function item, false if it is an atomic
    * value or a function (including maps and arrays)
    */
-  bool isFunction() { return true; }
+  bool isFunction() override { return true; }
 
   //! Determine whether the item is a map or some other type of item
   /**
    *
    * @return true if the item is a Xdm map item, false if it is some other type
    */
-  bool isMap() { return true; }
+  bool isMap() override { return true; }
 
   //! Get the type of the object
-  XDM_TYPE getType() { return XDM_MAP; }
+  XDM_TYPE getType() override { return XDM_MAP; }
 
   //! The toString() method returns a simple XML serialization of the node with
   //! defaulted serialization parameters.
@@ -264,7 +264,7 @@ public:
    * method may return an error message which will always begin with the label
    * "Error: ".
    */
-  const char *toString();
+  const char *toString() override;
 
 private:
   std::map<XdmAtomicValue *, XdmValue *>
