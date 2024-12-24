@@ -90,7 +90,7 @@ public:
   /**
    * Destructor for XdmNode
    */
-  virtual ~XdmNode();
+  virtual ~XdmNode() override;
 
   //! Determine whether the item is an atomic value or some other type of item
   /**

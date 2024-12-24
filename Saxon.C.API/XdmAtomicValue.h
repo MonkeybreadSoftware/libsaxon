@@ -43,7 +43,7 @@ public:
   /**
    * Destructor for this XdmAtomicValue
    */
-  virtual ~XdmAtomicValue();
+  virtual ~XdmAtomicValue() override;
 
   //! A Java Wrapper Constructor
   /**

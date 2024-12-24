@@ -15,3 +15,13 @@ Original license niote:
 // "Incompatible With Secondary Licenses", as defined by the Mozilla Public
 // License, v. 2.0.
 
+
+Changes:
+
+Fixed some memory leaks
+Fixed parameter documentation
+Avoid warning about bad function prototypes
+Added override for virtual methods
+Added getcwd functions
+
+

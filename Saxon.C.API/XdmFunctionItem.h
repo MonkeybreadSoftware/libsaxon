@@ -50,7 +50,7 @@ public:
   /**
    * Destructor for XdmFunctionItem
    */
-  virtual ~XdmFunctionItem() {
+  virtual ~XdmFunctionItem() override {
     if (fname != nullptr) {
       delete fname;
     }
