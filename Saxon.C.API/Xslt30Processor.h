@@ -391,9 +391,6 @@ public:
   // get current working directory
   const char *getcwd() { return cwdXT.c_str(); }
 
-private:
-  void createException(const char *message = nullptr);
-
   /**
    * Set a property specific to the processor in use.
    * XsltProcessor: set serialization properties (names start with '!' i.e. name
@@ -407,6 +404,11 @@ private:
 
   //! Clear property values set
   void clearProperties();
+
+  std::map<std::string, std::string> &getProperties() { return properties; }
+
+private:
+  void createException(const char *message = nullptr);
 
   SaxonProcessor *proc; /*!< Pointer to SaxonProcessor object*/
   int64_t cppXT;
