@@ -146,6 +146,7 @@ const char *XdmNode::getLocalName() {
 
     return localName;
 
+	  case UNKNOWN:
   default:
     return nullptr;
   }
@@ -169,6 +170,7 @@ const char *XdmNode::getNodeName() {
     nodeName = j_getNodeName(SaxonProcessor::sxn_environ->thread, (void *)fn,
                              (void *)value);
     return nodeName;
+	  case UNKNOWN:
   default:
     return nullptr;
   }
