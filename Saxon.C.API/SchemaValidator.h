@@ -258,6 +258,8 @@ public:
   // get current working directory
   const char *getcwd() { return cwdV.c_str(); }
 
+  const char *getoutputFile() { return outputFile.c_str(); }
+
 private:
   bool lax; /*!< flag to indicate lax mode for the Schema validation */
   SaxonProcessor
