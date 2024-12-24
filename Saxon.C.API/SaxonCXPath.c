@@ -83,8 +83,10 @@ sxnc_value *evaluate(sxnc_environment *environi, sxnc_xpath *proc, char *cwd,
                      char *xpathStr, char *encoding, sxnc_parameter *parameters,
                      sxnc_property *properties, int parLen, int propLen) {
 
+  sxnc_xpath *proc_to_free = NULL;
   if (!proc) {
     proc = (sxnc_xpath *)malloc(sizeof(sxnc_xpath));
+    proc_to_free = proc;
     int check = c_createXPathProcessor(environi, NULL, proc);
     if (check == -2) {
       return NULL;
@@ -115,6 +117,10 @@ sxnc_value *evaluate(sxnc_environment *environi, sxnc_xpath *proc, char *cwd,
 
   int64_t result = j_evaluate(environi->thread, (void *)proc->xpathProc, cwd,
                               xpathStr, encoding, (void *)processorDataRef);
+  if (proc_to_free)
+  {
+    free(proc_to_free);
+  }
   if (result == -2) {
     return NULL;
   }
@@ -130,8 +136,10 @@ sxnc_value *evaluateSingle(sxnc_environment *environi, sxnc_xpath *proc,
                            sxnc_parameter *parameters,
                            sxnc_property *properties, int parLen, int propLen) {
 
+  sxnc_xpath *proc_to_free = NULL;
   if (!proc) {
     proc = (sxnc_xpath *)malloc(sizeof(sxnc_xpath));
+    proc_to_free = proc;
     int check = c_createXPathProcessor(environi, NULL, proc);
     if (check == -2) {
       return NULL;
@@ -163,6 +171,10 @@ sxnc_value *evaluateSingle(sxnc_environment *environi, sxnc_xpath *proc,
   int64_t result =
       j_evaluateSingle(environi->thread, (void *)proc->xpathProc, cwd, xpathStr,
                        encoding, (void *)processorDataRef);
+  if (proc_to_free)
+  {
+     free(proc_to_free);
+  }
   if (result == -2) {
     return NULL;
   }
@@ -179,9 +191,11 @@ bool effectiveBooleanValue(sxnc_environment *environi, sxnc_xpath *proc,
                            sxnc_property *properties, int parLen, int propLen) {
 
   int size = parLen + propLen;
+  sxnc_xpath *proc_to_free = NULL;
 
   if (!proc) {
     proc = (sxnc_xpath *)malloc(sizeof(sxnc_xpath));
+	proc_to_free = proc;
     int check = c_createXPathProcessor(environi, NULL, proc);
     if (check == -2) {
       return NULL;
@@ -213,6 +227,10 @@ bool effectiveBooleanValue(sxnc_environment *environi, sxnc_xpath *proc,
       j_effectiveBooleanValue(environi->thread, (void *)proc->xpathProc, cwd,
                               xpathStr, encoding, (void *)processorDataRef);
 
+  if (proc_to_free)
+  {
+    free(proc_to_free);
+  }
   if (result == -2) {
     return 0;
   }

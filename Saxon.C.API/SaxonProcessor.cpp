@@ -1152,6 +1152,7 @@ XdmArray *SaxonProcessor::makeArray(bool *input, int length) {
   int64_t xdmArrayRef =
       j_makeXdmArrayFromBool(sxn_environ->thread, inputAsInts, length);
   XdmArray *newArray = new XdmArray(xdmArrayRef, length);
+  delete[] inputAsInts;
   return newArray;
 }
 
