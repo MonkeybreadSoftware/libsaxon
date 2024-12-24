@@ -229,7 +229,7 @@ private:
     @param proc - Supplied pointer to the SaxonProcessor object
     cwd - The current working directory
   */
-  DocumentBuilder(SaxonProcessor *p, int64_t docBuilderObject, std::string cwd);
+  DocumentBuilder(SaxonProcessor *proc, int64_t docBuilderObject, std::string cwd);
 
   /**
    * Xslt30Processor copy constructor.

@@ -64,7 +64,7 @@ public:
    * @param obj - The internal Java object for the XdmNode is wrapped here in
    * the C++ XdmNode
    */
-  XdmNode(int64_t);
+  XdmNode(int64_t obj);
 
   //! XdmNode constructor created as a wrapper around an existing Saxon Java
   //! object
@@ -77,7 +77,7 @@ public:
    * @param kind - The  kind of node, for example
    * <code>XdmNodeKind#ELEMENT</code> or <code>XdmNodeKind#ATTRIBUTE</code>
    */
-  XdmNode(XdmNode *parent, int64_t, XDM_NODE_KIND kind);
+  XdmNode(XdmNode *parent, int64_t obj, XDM_NODE_KIND kind);
 
   /**
    * Copy constructor

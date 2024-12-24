@@ -153,7 +153,7 @@ int detach_graalvm_thread(sxnc_environment *env);
  * Create and return the ObjectHandle for a Saxon Processor. Here we pass in the Graal isolate
  * pointer which should have been attached to in advance.
  *
- * \param *thread [in] The Graal Isolate thread
+ * \param thread [in] The Graal Isolate thread
  * \param license [in] Whether the processor should be licensed (EE/PE) or not (HE).
  */
 int64_t createSaxonProcessor2(graal_isolatethread_t *thread, int license);

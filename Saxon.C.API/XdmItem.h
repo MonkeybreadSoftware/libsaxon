@@ -44,7 +44,7 @@ public:
    * @param objRef - The internal Java object for the XdmItem is wrapped here in
    * the C++ XdmItem class
    */
-  explicit XdmItem(int64_t);
+  explicit XdmItem(int64_t objRef);
 
   //! Copy constructor.
   /**
