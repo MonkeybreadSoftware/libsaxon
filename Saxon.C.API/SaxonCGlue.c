@@ -23,7 +23,7 @@ char * dllPath =
 "C:\\Program Files\\Saxonica\\SaxonPEC 12.5.0";
 #endif*/
 
-char *_getResourceDirectory() { return resources_dir; }
+char *_getResourceDirectory(void) { return resources_dir; }
 
 /*
  * Load dll.
