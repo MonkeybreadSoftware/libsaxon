@@ -270,8 +270,9 @@ void SaxonProcessor::initialize(bool l) {
 void SaxonProcessor::attachCurrentThread() {
 #ifdef DEBUG
   std::cerr << "attachCurrentThread called" << std::endl;
+	int result =
 #endif
-  int result = attach_graalvm_thread(SaxonProcessor::sxn_environ);
+	attach_graalvm_thread(SaxonProcessor::sxn_environ);
 #ifdef DEBUG
   if (result != 0) {
     std::cerr << "attachCurrentThread failed or already in the current thread"
@@ -283,8 +284,9 @@ void SaxonProcessor::attachCurrentThread() {
 void SaxonProcessor::detachCurrentThread() {
 #ifdef DEBUG
   std::cerr << "detachCurrentThread called" << std::endl;
+	int result =
 #endif
-  int result = detach_graalvm_thread(SaxonProcessor::sxn_environ);
+	detach_graalvm_thread(SaxonProcessor::sxn_environ);
 #ifdef DEBUG
   if (result != 0) {
     std::cerr << "detachCurrentThread failed" << std::endl;
