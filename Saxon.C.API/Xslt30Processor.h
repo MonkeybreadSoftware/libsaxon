@@ -388,6 +388,9 @@ public:
    */
   const char *getErrorCode();
 
+  // get current working directory
+  const char *getcwd() { return cwdXT.c_str(); }
+
 private:
   void createException(const char *message = nullptr);
 

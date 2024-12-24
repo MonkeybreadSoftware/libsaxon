@@ -213,6 +213,9 @@ public:
    */
   SaxonApiException *getException();
 
+  // get current working directory
+  const char *getcwd() { return cwdDB.c_str(); }
+
 private:
   /**
    * Create a DocumentBuilder. This is a protected constructor. Users should

@@ -255,6 +255,9 @@ public:
   //! Get the underlying java object of the C++ schema validator
   int64_t getUnderlyingValidator() { return cppV; }
 
+  // get current working directory
+  const char *getcwd() { return cwdV.c_str(); }
+
 private:
   bool lax; /*!< flag to indicate lax mode for the Schema validation */
   SaxonProcessor

@@ -532,6 +532,9 @@ public:
   //! Clear any exception thrown
   void exceptionClear();
 
+  // get current working directory
+  const char *getcwd() { return cwdXE.c_str(); }
+
 private:
   //! Default constructor.
   /*!

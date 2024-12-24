@@ -322,6 +322,9 @@ public:
    */
   SaxonApiException *getException();
 
+  // get current working directory
+  const char *getcwd() { return cwdXQ.c_str(); }
+
 private:
   void createException(const char *message = nullptr);
   bool streaming;
