@@ -16,7 +16,6 @@ XdmItem::XdmItem(const XdmItem &other) : XdmValue(other) {
   xdmSize = 1;
   refCount = other.refCount;
   stringValue = other.stringValue;
-  stringValue = other.stringValue;
   itemToString = other.itemToString;
 }
 
