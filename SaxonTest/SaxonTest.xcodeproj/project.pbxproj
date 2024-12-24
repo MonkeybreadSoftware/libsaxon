@@ -13,7 +13,6 @@
 		4042DCA92D1ADE96006FDC2F /* SaxonApiException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC842D1ADE96006FDC2F /* SaxonApiException.cpp */; };
 		4042DCAB2D1ADE96006FDC2F /* SaxonCGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC862D1ADE96006FDC2F /* SaxonCGlue.c */; };
 		4042DCAC2D1ADE96006FDC2F /* XdmMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC982D1ADE96006FDC2F /* XdmMap.cpp */; };
-		4042DCAD2D1ADE96006FDC2F /* CythonExceptionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */; };
 		4042DCAF2D1ADE96006FDC2F /* XdmValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9C2D1ADE96006FDC2F /* XdmValue.cpp */; };
 		4042DCB02D1ADE96006FDC2F /* XdmNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9A2D1ADE96006FDC2F /* XdmNode.cpp */; };
 		4042DCB12D1ADE96006FDC2F /* XdmItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC962D1ADE96006FDC2F /* XdmItem.cpp */; };
@@ -26,6 +25,7 @@
 		4042DCBB2D1ADE96006FDC2F /* XPathProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9E2D1ADE96006FDC2F /* XPathProcessor.cpp */; };
 		4042DCBD2D1ADE96006FDC2F /* SaxonProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC8C2D1ADE96006FDC2F /* SaxonProcessor.cpp */; };
 		4042DCBE2D1ADE96006FDC2F /* DocumentBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */; };
+		4042DCC32D1B056F006FDC2F /* libsaxon-pec-12.5.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4042DCC22D1B056F006FDC2F /* libsaxon-pec-12.5.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,8 +42,6 @@
 
 /* Begin PBXFileReference section */
 		4042DC672D1ADDB1006FDC2F /* SaxonTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SaxonTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4042DC712D1ADE96006FDC2F /* CythonExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CythonExceptionHandler.h; path = ../Saxon.C.API/CythonExceptionHandler.h; sourceTree = SOURCE_ROOT; };
-		4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CythonExceptionHandler.cpp; path = ../Saxon.C.API/CythonExceptionHandler.cpp; sourceTree = SOURCE_ROOT; };
 		4042DC732D1ADE96006FDC2F /* DocumentBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DocumentBuilder.h; path = ../Saxon.C.API/DocumentBuilder.h; sourceTree = SOURCE_ROOT; };
 		4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DocumentBuilder.cpp; path = ../Saxon.C.API/DocumentBuilder.cpp; sourceTree = SOURCE_ROOT; };
 		4042DC752D1ADE96006FDC2F /* graal_isolate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graal_isolate.h; sourceTree = "<group>"; };
@@ -84,6 +82,7 @@
 		4042DCA22D1ADE96006FDC2F /* Xslt30Processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Xslt30Processor.cpp; path = ../Saxon.C.API/Xslt30Processor.cpp; sourceTree = SOURCE_ROOT; };
 		4042DCA32D1ADE96006FDC2F /* XsltExecutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XsltExecutable.h; path = ../Saxon.C.API/XsltExecutable.h; sourceTree = SOURCE_ROOT; };
 		4042DCA42D1ADE96006FDC2F /* XsltExecutable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XsltExecutable.cpp; path = ../Saxon.C.API/XsltExecutable.cpp; sourceTree = SOURCE_ROOT; };
+		4042DCC22D1B056F006FDC2F /* libsaxon-pec-12.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libsaxon-pec-12.5.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -99,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4042DCC32D1B056F006FDC2F /* libsaxon-pec-12.5.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +108,6 @@
 		4042DC5E2D1ADDB1006FDC2F = {
 			isa = PBXGroup;
 			children = (
-				4042DC712D1ADE96006FDC2F /* CythonExceptionHandler.h */,
-				4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */,
 				4042DC732D1ADE96006FDC2F /* DocumentBuilder.h */,
 				4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */,
 				4042DC792D1ADE96006FDC2F /* graalvm */,
@@ -148,6 +146,7 @@
 				4042DCA32D1ADE96006FDC2F /* XsltExecutable.h */,
 				4042DCA42D1ADE96006FDC2F /* XsltExecutable.cpp */,
 				4042DC692D1ADDB1006FDC2F /* SaxonTest */,
+				4042DCC12D1B056F006FDC2F /* Frameworks */,
 				4042DC682D1ADDB1006FDC2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +170,14 @@
 			name = graalvm;
 			path = ../Saxon.C.API/graalvm;
 			sourceTree = SOURCE_ROOT;
+		};
+		4042DCC12D1B056F006FDC2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4042DCC22D1B056F006FDC2F /* libsaxon-pec-12.5.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -241,7 +248,6 @@
 				4042DCA92D1ADE96006FDC2F /* SaxonApiException.cpp in Sources */,
 				4042DCAB2D1ADE96006FDC2F /* SaxonCGlue.c in Sources */,
 				4042DCAC2D1ADE96006FDC2F /* XdmMap.cpp in Sources */,
-				4042DCAD2D1ADE96006FDC2F /* CythonExceptionHandler.cpp in Sources */,
 				4042DCAF2D1ADE96006FDC2F /* XdmValue.cpp in Sources */,
 				4042DCB02D1ADE96006FDC2F /* XdmNode.cpp in Sources */,
 				4042DCB12D1ADE96006FDC2F /* XdmItem.cpp in Sources */,
@@ -381,6 +387,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77N5ZH2WQP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Saxon.C.API,
@@ -399,6 +410,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77N5ZH2WQP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Saxon.C.API,
