@@ -99,8 +99,8 @@ XQueryProcessor::XQueryProcessor(const XQueryProcessor &other) {
 }
 
 XQueryProcessor *XQueryProcessor::clone() {
-  XQueryProcessor *proc = new XQueryProcessor(*this);
-  return proc;
+  XQueryProcessor *p = new XQueryProcessor(*this);
+  return p;
 }
 
 std::map<std::string, XdmValue *> &XQueryProcessor::getParameters() {
