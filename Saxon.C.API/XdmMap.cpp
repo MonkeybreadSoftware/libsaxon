@@ -8,7 +8,7 @@
 
 XdmMap::XdmMap() : XdmFunctionItem() { map_size = 1; }
 
-XdmMap::XdmMap(const XdmMap &d) {
+XdmMap::XdmMap(const XdmMap &d) : XdmFunctionItem(d) {
   arity = d.arity;
   data = d.data; // TODO check if copy works
   map_size = d.map_size;
