@@ -749,6 +749,8 @@ public:
    */
   static void getInfo();
 
+  std::map<std::string, std::string> &getConfigProperties() { return configProperties; }
+
   /*static JavaVM *jvm;*/
 
 protected:
