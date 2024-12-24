@@ -8,16 +8,17 @@
 
 XdmNode::XdmNode(int64_t obj)
     : XdmItem(obj), baseURI(nullptr), nodeName(nullptr), localName(nullptr),
-      childCount(-1), children(nullptr), parent(nullptr), typedValue(nullptr),
-      attrValues(nullptr), attrCount(-1), nodeKind(UNKNOWN), axisCount(0),
-      nodeToString(nullptr) {
+      nodeToString(nullptr), children(nullptr),childCount(-1), axisCount(0),
+      parent(nullptr), typedValue(nullptr), attrValues(nullptr),attrCount(-1),
+      nodeKind(UNKNOWN) {
 }
 
 XdmNode::XdmNode(XdmNode *p, int64_t obj, XDM_NODE_KIND kind)
     : XdmItem(obj), baseURI(nullptr), nodeName(nullptr), localName(nullptr),
-      childCount(-1), children(nullptr), parent(p), typedValue(nullptr),
-      attrValues(nullptr), attrCount(-1), nodeKind(kind), axisCount(0),
-      nodeToString(nullptr) {}
+      nodeToString(nullptr), children(nullptr),childCount(-1), axisCount(0),
+      parent(p), typedValue(nullptr), attrValues(nullptr),attrCount(-1),
+      nodeKind(kind) {}
+
 
 XdmNode::XdmNode(const XdmNode &other) {
   baseURI = other.baseURI;
