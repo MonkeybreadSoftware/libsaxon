@@ -6,22 +6,19 @@ on the long run, I'll try to get this into
 
 Started with v12.5 of their public headers.
 
-Original license niote:
+Original license notes:
 
-// Copyright (c) 2022 - 2023 Saxonica Limited.
-// This Source Code Form is subject to the terms of the Mozilla Public License,
-// v. 2.0. If a copy of the MPL was not distributed with this file, You can
-// obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is
-// "Incompatible With Secondary Licenses", as defined by the Mozilla Public
-// License, v. 2.0.
+Copyright (c) 2022 - 2023 Saxonica Limited.
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 
 
 Changes:
 
-Fixed some memory leaks
-Fixed parameter documentation
-Avoid warning about bad function prototypes
-Added override for virtual methods
-Added getcwd functions
+* Fixed some memory leaks
+* Fixed parameter documentation
+* Fixed warning about bad function prototypes
+* Fixed warning about implicit conversations
+* Added override for virtual methods
+* Added getcwd functions
 
 
