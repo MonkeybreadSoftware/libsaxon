@@ -140,7 +140,7 @@ public:
    * @return the arity of the function, that is, the number of arguments in the
    * function's signature
    */
-  int getArity() { return 1; }
+  int getArity() override { return 1; }
 
   //! Get the string value of the XdmArray item.
   /**
@@ -149,7 +149,7 @@ public:
    *
    * @return the string value of the item
    */
-  const char *getStringValue();
+  const char *getStringValue() override;
 
   /**
    * Determine whether the item is a function or some other type of item
@@ -157,12 +157,12 @@ public:
    * @return true if the item is a Xdm function item, false if it is an atomic
    * value or a function (including maps and arrays)
    */
-  bool isFunction() { return true; }
+  bool isFunction() override { return true; }
 
   /**
    * Get the type of the object
    */
-  XDM_TYPE getType() { return XDM_ARRAY; }
+  XDM_TYPE getType() override { return XDM_ARRAY; }
 
   //! Determine whether the item is an array or some other type of item
   /**
@@ -170,7 +170,7 @@ public:
    * @return true if the item is a Xdm array item, false if it is some other
    * type
    */
-  bool isArray() { return true; }
+  bool isArray() override { return true; }
 
   //! The toString() method returns a simple XML serialization of the node with
   //! defaulted serialization parameters.
@@ -198,7 +198,7 @@ public:
    * method may return an error message which will always begin with the label
    * "Error: ".
    */
-  const char *toString();
+  const char *toString() override;
 
 private:
   int arrayLen;

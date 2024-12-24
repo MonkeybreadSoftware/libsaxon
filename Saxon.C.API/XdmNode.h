@@ -99,14 +99,14 @@ public:
    * @return true if the item is an atomic value, false if it is a node or a
    * function (including maps and arrays)
    */
-  virtual bool isAtomic();
+  virtual bool isAtomic() override;
 
   //! Get the first item in the sequence
   /**
    *
    * @return XdmItem or nullptr if sequence is empty
    */
-  XdmItem *getHead();
+  XdmItem *getHead() override;
 
   //! Get the kind of node.
   /**
@@ -185,7 +185,7 @@ public:
    * @remark the SaxonProcessor argument has been removed from release
    * version 1.2.1
    */
-  const char *getStringValue();
+  const char *getStringValue() override;
 
   //! The toString() method returns a simple XML serialization of the node with
   //! defaulted serialization parameters. The caller should deallocate memory
@@ -215,7 +215,7 @@ public:
    * method may return an error message which will always begin with the label
    * "Error: ".
    */
-  const char *toString();
+  const char *toString() override;
 
   //! Get the parent of this node
   /**
@@ -291,7 +291,7 @@ public:
    *
    * @return jobject - The unwrapped JNI object for the XdmNode
    */
-  int64_t getUnderlyingValue() { return XdmItem::getUnderlyingValue(); }
+  int64_t getUnderlyingValue() override { return XdmItem::getUnderlyingValue(); }
 
   //! Determine whether the item is a node or some other type of item
   /**
@@ -300,7 +300,7 @@ public:
    * @return true if the item is a node, false if it is an atomic value or a
    * function (including maps and arrays)
    */
-  bool isNode() { return true; }
+  bool isNode() override { return true; }
 
   //! Get all the child nodes from the current parent node.
   /**
@@ -329,7 +329,7 @@ public:
    *
    * @return XDM_TYPE - Type of the XdmItem
    */
-  XDM_TYPE getType() { return XDM_NODE; }
+  XDM_TYPE getType() override { return XDM_NODE; }
 
 
     /**

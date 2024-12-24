@@ -83,7 +83,7 @@ public:
    *
    * @return nothing; this method always throws an exception
    */
-  const char *getStringValue();
+  const char *getStringValue() override;
 
   //! Get a system function
   /**
@@ -126,12 +126,12 @@ public:
    * Check if this XdmItem is atomic
    * @return false
    */
-  bool isAtomic() { return false; }
+  bool isAtomic() override { return false; }
 
   /**
    * Get the type of the object
    */
-  XDM_TYPE getType() { return XDM_FUNCTION_ITEM; }
+  XDM_TYPE getType() override { return XDM_FUNCTION_ITEM; }
 
   //! Determine whether the item is a function or some other type of item
   /**
@@ -139,7 +139,7 @@ public:
    * @return true if the item is a Xdm function item, false if it is an atomic
    * value or a function (including maps and arrays)
    */
-  bool isFunction() { return true; }
+  bool isFunction() override { return true; }
 
 protected:
   XdmValue *getXdmValueSubClass(int64_t value); /*!< Creates the right type of result value */

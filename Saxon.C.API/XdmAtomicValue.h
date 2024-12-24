@@ -108,7 +108,7 @@ public:
    *
    * @return the result of converting the item to a string.
    */
-  const char *getStringValue();
+  const char *getStringValue() override;
 
   //! Get the value converted to an integer using the XPath casting rules
   /**
@@ -132,7 +132,7 @@ public:
    *
    * @return XdmItem or nullptr if sequence is empty
    */
-  XdmItem *getHead();
+  XdmItem *getHead() override;
 
   //! Determine whether the item is an atomic value or some other type of item
   /**
@@ -141,7 +141,7 @@ public:
    * @return true if the item is an atomic value, false if it is a node or a
    * function (including maps and arrays)
    */
-  bool isAtomic() { return true; }
+  bool isAtomic() override { return true; }
 
   //! Get a hashcode that reflects the rules for equality matching
   /**
@@ -153,7 +153,7 @@ public:
   /**
    * Get the type of the object
    */
-  XDM_TYPE getType() { return XDM_ATOMIC_VALUE; }
+  XDM_TYPE getType() override { return XDM_ATOMIC_VALUE; }
 
 private:
   std::string valType; /*!< The type of this XdmAtomicValue */

@@ -63,14 +63,14 @@ public:
   /**
    * this method is used for internal memory management.
    */
-  virtual void incrementRefCount();
+  virtual void incrementRefCount() override;
 
   //! Decrement reference count of this XdmItem - Memory management - Internal
   //! use only
   /**
    * this method is used for internal memory management.
    */
-  virtual void decrementRefCount();
+  virtual void decrementRefCount() override;
 
   /**
    * Determine whether the item is an atomic value or some other type of item
@@ -115,7 +115,7 @@ public:
    * Get Java XdmValue object.
    * @return jobject - The Java object of the XdmValue in its JNI representation
    */
-  virtual int64_t getUnderlyingValue();
+  virtual int64_t getUnderlyingValue() override;
 
   //! Get the string value of the item.
   /**
@@ -134,13 +134,13 @@ public:
   //! The toString() method returns a simple XML serialization of the node with
   //! defaulted serialization parameters. The caller should deallocate memory
   //! using `delete`
-  const char *toString();
+  const char *toString() override;
 
   /**
    * Get the first item in the sequence
    * @return XdmItem or nullptr if sequence is empty
    */
-  virtual XdmItem *getHead();
+  virtual XdmItem *getHead() override;
 
   /**
    * Get the n'th item in the value, counting from zero.
@@ -152,19 +152,19 @@ public:
    * number of items in the value return nullptr if the value is lazily
    * evaluated and the delayed evaluation fails with a dynamic error.
    */
-  XdmItem *itemAt(int n);
+  XdmItem *itemAt(int n) override;
 
   /**
    * Get the number of items in the sequence
    * @return the number of items in the value. For an item (including a map or
    * array) this is always 1 (one).
    */
-  int size();
+  int size() override;
 
   /**
    * Get the type of the object
    */
-  virtual XDM_TYPE getType();
+  virtual XDM_TYPE getType() override;
 
 protected:
   int64_t value;            /*!< The Java XdmItem reference in Graalvm  */
