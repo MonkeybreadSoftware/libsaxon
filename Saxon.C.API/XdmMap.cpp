@@ -196,3 +196,4 @@ XdmValue **XdmMap::values() {
   delete results;
   return valuesi;
 }
+

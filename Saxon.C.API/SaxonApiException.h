@@ -129,3 +129,4 @@ private:
 };
 
 #endif /* SAXON_API_EXCEPTION_H */
+
