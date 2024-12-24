@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4042DCA62D1ADE96006FDC2F /* XdmFunctionItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC942D1ADE96006FDC2F /* XdmFunctionItem.cpp */; };
+		4042DCA72D1ADE96006FDC2F /* SchemaValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC8E2D1ADE96006FDC2F /* SchemaValidator.cpp */; };
+		4042DCA82D1ADE96006FDC2F /* Xslt30Processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DCA22D1ADE96006FDC2F /* Xslt30Processor.cpp */; };
+		4042DCA92D1ADE96006FDC2F /* SaxonApiException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC842D1ADE96006FDC2F /* SaxonApiException.cpp */; };
+		4042DCAB2D1ADE96006FDC2F /* SaxonCGlue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC862D1ADE96006FDC2F /* SaxonCGlue.c */; };
+		4042DCAC2D1ADE96006FDC2F /* XdmMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC982D1ADE96006FDC2F /* XdmMap.cpp */; };
+		4042DCAD2D1ADE96006FDC2F /* CythonExceptionHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */; };
+		4042DCAF2D1ADE96006FDC2F /* XdmValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9C2D1ADE96006FDC2F /* XdmValue.cpp */; };
+		4042DCB02D1ADE96006FDC2F /* XdmNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9A2D1ADE96006FDC2F /* XdmNode.cpp */; };
+		4042DCB12D1ADE96006FDC2F /* XdmItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC962D1ADE96006FDC2F /* XdmItem.cpp */; };
+		4042DCB22D1ADE96006FDC2F /* XdmArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC902D1ADE96006FDC2F /* XdmArray.cpp */; };
+		4042DCB42D1ADE96006FDC2F /* XQueryProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DCA02D1ADE96006FDC2F /* XQueryProcessor.cpp */; };
+		4042DCB52D1ADE96006FDC2F /* XdmAtomicValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC922D1ADE96006FDC2F /* XdmAtomicValue.cpp */; };
+		4042DCB62D1ADE96006FDC2F /* SaxonCXPath.c in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC8A2D1ADE96006FDC2F /* SaxonCXPath.c */; };
+		4042DCB92D1ADE96006FDC2F /* XsltExecutable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DCA42D1ADE96006FDC2F /* XsltExecutable.cpp */; };
+		4042DCBA2D1ADE96006FDC2F /* SaxonCProcessor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC882D1ADE96006FDC2F /* SaxonCProcessor.c */; };
+		4042DCBB2D1ADE96006FDC2F /* XPathProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC9E2D1ADE96006FDC2F /* XPathProcessor.cpp */; };
+		4042DCBD2D1ADE96006FDC2F /* SaxonProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC8C2D1ADE96006FDC2F /* SaxonProcessor.cpp */; };
+		4042DCBE2D1ADE96006FDC2F /* DocumentBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4042DC652D1ADDB1006FDC2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4042DC672D1ADDB1006FDC2F /* SaxonTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SaxonTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4042DC712D1ADE96006FDC2F /* CythonExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CythonExceptionHandler.h; path = ../Saxon.C.API/CythonExceptionHandler.h; sourceTree = SOURCE_ROOT; };
+		4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CythonExceptionHandler.cpp; path = ../Saxon.C.API/CythonExceptionHandler.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC732D1ADE96006FDC2F /* DocumentBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DocumentBuilder.h; path = ../Saxon.C.API/DocumentBuilder.h; sourceTree = SOURCE_ROOT; };
+		4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DocumentBuilder.cpp; path = ../Saxon.C.API/DocumentBuilder.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC752D1ADE96006FDC2F /* graal_isolate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graal_isolate.h; sourceTree = "<group>"; };
+		4042DC762D1ADE96006FDC2F /* graal_isolate_dynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graal_isolate_dynamic.h; sourceTree = "<group>"; };
+		4042DC772D1ADE96006FDC2F /* libsaxon-pec-12.5.0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libsaxon-pec-12.5.0.h"; sourceTree = "<group>"; };
+		4042DC782D1ADE96006FDC2F /* libsaxon-pec-12.5.0_dynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libsaxon-pec-12.5.0_dynamic.h"; sourceTree = "<group>"; };
+		4042DC832D1ADE96006FDC2F /* SaxonApiException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SaxonApiException.h; path = ../Saxon.C.API/SaxonApiException.h; sourceTree = SOURCE_ROOT; };
+		4042DC842D1ADE96006FDC2F /* SaxonApiException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SaxonApiException.cpp; path = ../Saxon.C.API/SaxonApiException.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC852D1ADE96006FDC2F /* SaxonCGlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SaxonCGlue.h; path = ../Saxon.C.API/SaxonCGlue.h; sourceTree = SOURCE_ROOT; };
+		4042DC862D1ADE96006FDC2F /* SaxonCGlue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SaxonCGlue.c; path = ../Saxon.C.API/SaxonCGlue.c; sourceTree = SOURCE_ROOT; };
+		4042DC872D1ADE96006FDC2F /* SaxonCProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SaxonCProcessor.h; path = ../Saxon.C.API/SaxonCProcessor.h; sourceTree = SOURCE_ROOT; };
+		4042DC882D1ADE96006FDC2F /* SaxonCProcessor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SaxonCProcessor.c; path = ../Saxon.C.API/SaxonCProcessor.c; sourceTree = SOURCE_ROOT; };
+		4042DC892D1ADE96006FDC2F /* SaxonCXPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SaxonCXPath.h; path = ../Saxon.C.API/SaxonCXPath.h; sourceTree = SOURCE_ROOT; };
+		4042DC8A2D1ADE96006FDC2F /* SaxonCXPath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SaxonCXPath.c; path = ../Saxon.C.API/SaxonCXPath.c; sourceTree = SOURCE_ROOT; };
+		4042DC8B2D1ADE96006FDC2F /* SaxonProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SaxonProcessor.h; path = ../Saxon.C.API/SaxonProcessor.h; sourceTree = SOURCE_ROOT; };
+		4042DC8C2D1ADE96006FDC2F /* SaxonProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SaxonProcessor.cpp; path = ../Saxon.C.API/SaxonProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC8D2D1ADE96006FDC2F /* SchemaValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SchemaValidator.h; path = ../Saxon.C.API/SchemaValidator.h; sourceTree = SOURCE_ROOT; };
+		4042DC8E2D1ADE96006FDC2F /* SchemaValidator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SchemaValidator.cpp; path = ../Saxon.C.API/SchemaValidator.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC8F2D1ADE96006FDC2F /* XdmArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmArray.h; path = ../Saxon.C.API/XdmArray.h; sourceTree = SOURCE_ROOT; };
+		4042DC902D1ADE96006FDC2F /* XdmArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmArray.cpp; path = ../Saxon.C.API/XdmArray.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC912D1ADE96006FDC2F /* XdmAtomicValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmAtomicValue.h; path = ../Saxon.C.API/XdmAtomicValue.h; sourceTree = SOURCE_ROOT; };
+		4042DC922D1ADE96006FDC2F /* XdmAtomicValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmAtomicValue.cpp; path = ../Saxon.C.API/XdmAtomicValue.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC932D1ADE96006FDC2F /* XdmFunctionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmFunctionItem.h; path = ../Saxon.C.API/XdmFunctionItem.h; sourceTree = SOURCE_ROOT; };
+		4042DC942D1ADE96006FDC2F /* XdmFunctionItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmFunctionItem.cpp; path = ../Saxon.C.API/XdmFunctionItem.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC952D1ADE96006FDC2F /* XdmItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmItem.h; path = ../Saxon.C.API/XdmItem.h; sourceTree = SOURCE_ROOT; };
+		4042DC962D1ADE96006FDC2F /* XdmItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmItem.cpp; path = ../Saxon.C.API/XdmItem.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC972D1ADE96006FDC2F /* XdmMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmMap.h; path = ../Saxon.C.API/XdmMap.h; sourceTree = SOURCE_ROOT; };
+		4042DC982D1ADE96006FDC2F /* XdmMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmMap.cpp; path = ../Saxon.C.API/XdmMap.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC992D1ADE96006FDC2F /* XdmNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmNode.h; path = ../Saxon.C.API/XdmNode.h; sourceTree = SOURCE_ROOT; };
+		4042DC9A2D1ADE96006FDC2F /* XdmNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmNode.cpp; path = ../Saxon.C.API/XdmNode.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC9B2D1ADE96006FDC2F /* XdmValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XdmValue.h; path = ../Saxon.C.API/XdmValue.h; sourceTree = SOURCE_ROOT; };
+		4042DC9C2D1ADE96006FDC2F /* XdmValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XdmValue.cpp; path = ../Saxon.C.API/XdmValue.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC9D2D1ADE96006FDC2F /* XPathProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XPathProcessor.h; path = ../Saxon.C.API/XPathProcessor.h; sourceTree = SOURCE_ROOT; };
+		4042DC9E2D1ADE96006FDC2F /* XPathProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XPathProcessor.cpp; path = ../Saxon.C.API/XPathProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		4042DC9F2D1ADE96006FDC2F /* XQueryProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XQueryProcessor.h; path = ../Saxon.C.API/XQueryProcessor.h; sourceTree = SOURCE_ROOT; };
+		4042DCA02D1ADE96006FDC2F /* XQueryProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XQueryProcessor.cpp; path = ../Saxon.C.API/XQueryProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		4042DCA12D1ADE96006FDC2F /* Xslt30Processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Xslt30Processor.h; path = ../Saxon.C.API/Xslt30Processor.h; sourceTree = SOURCE_ROOT; };
+		4042DCA22D1ADE96006FDC2F /* Xslt30Processor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Xslt30Processor.cpp; path = ../Saxon.C.API/Xslt30Processor.cpp; sourceTree = SOURCE_ROOT; };
+		4042DCA32D1ADE96006FDC2F /* XsltExecutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XsltExecutable.h; path = ../Saxon.C.API/XsltExecutable.h; sourceTree = SOURCE_ROOT; };
+		4042DCA42D1ADE96006FDC2F /* XsltExecutable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XsltExecutable.cpp; path = ../Saxon.C.API/XsltExecutable.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4042DC692D1ADDB1006FDC2F /* SaxonTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaxonTest;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4042DC642D1ADDB1006FDC2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4042DC5E2D1ADDB1006FDC2F = {
+			isa = PBXGroup;
+			children = (
+				4042DC712D1ADE96006FDC2F /* CythonExceptionHandler.h */,
+				4042DC722D1ADE96006FDC2F /* CythonExceptionHandler.cpp */,
+				4042DC732D1ADE96006FDC2F /* DocumentBuilder.h */,
+				4042DC742D1ADE96006FDC2F /* DocumentBuilder.cpp */,
+				4042DC792D1ADE96006FDC2F /* graalvm */,
+				4042DC832D1ADE96006FDC2F /* SaxonApiException.h */,
+				4042DC842D1ADE96006FDC2F /* SaxonApiException.cpp */,
+				4042DC852D1ADE96006FDC2F /* SaxonCGlue.h */,
+				4042DC862D1ADE96006FDC2F /* SaxonCGlue.c */,
+				4042DC872D1ADE96006FDC2F /* SaxonCProcessor.h */,
+				4042DC882D1ADE96006FDC2F /* SaxonCProcessor.c */,
+				4042DC892D1ADE96006FDC2F /* SaxonCXPath.h */,
+				4042DC8A2D1ADE96006FDC2F /* SaxonCXPath.c */,
+				4042DC8B2D1ADE96006FDC2F /* SaxonProcessor.h */,
+				4042DC8C2D1ADE96006FDC2F /* SaxonProcessor.cpp */,
+				4042DC8D2D1ADE96006FDC2F /* SchemaValidator.h */,
+				4042DC8E2D1ADE96006FDC2F /* SchemaValidator.cpp */,
+				4042DC8F2D1ADE96006FDC2F /* XdmArray.h */,
+				4042DC902D1ADE96006FDC2F /* XdmArray.cpp */,
+				4042DC912D1ADE96006FDC2F /* XdmAtomicValue.h */,
+				4042DC922D1ADE96006FDC2F /* XdmAtomicValue.cpp */,
+				4042DC932D1ADE96006FDC2F /* XdmFunctionItem.h */,
+				4042DC942D1ADE96006FDC2F /* XdmFunctionItem.cpp */,
+				4042DC952D1ADE96006FDC2F /* XdmItem.h */,
+				4042DC962D1ADE96006FDC2F /* XdmItem.cpp */,
+				4042DC972D1ADE96006FDC2F /* XdmMap.h */,
+				4042DC982D1ADE96006FDC2F /* XdmMap.cpp */,
+				4042DC992D1ADE96006FDC2F /* XdmNode.h */,
+				4042DC9A2D1ADE96006FDC2F /* XdmNode.cpp */,
+				4042DC9B2D1ADE96006FDC2F /* XdmValue.h */,
+				4042DC9C2D1ADE96006FDC2F /* XdmValue.cpp */,
+				4042DC9D2D1ADE96006FDC2F /* XPathProcessor.h */,
+				4042DC9E2D1ADE96006FDC2F /* XPathProcessor.cpp */,
+				4042DC9F2D1ADE96006FDC2F /* XQueryProcessor.h */,
+				4042DCA02D1ADE96006FDC2F /* XQueryProcessor.cpp */,
+				4042DCA12D1ADE96006FDC2F /* Xslt30Processor.h */,
+				4042DCA22D1ADE96006FDC2F /* Xslt30Processor.cpp */,
+				4042DCA32D1ADE96006FDC2F /* XsltExecutable.h */,
+				4042DCA42D1ADE96006FDC2F /* XsltExecutable.cpp */,
+				4042DC692D1ADDB1006FDC2F /* SaxonTest */,
+				4042DC682D1ADDB1006FDC2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4042DC682D1ADDB1006FDC2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4042DC672D1ADDB1006FDC2F /* SaxonTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4042DC792D1ADE96006FDC2F /* graalvm */ = {
+			isa = PBXGroup;
+			children = (
+				4042DC752D1ADE96006FDC2F /* graal_isolate.h */,
+				4042DC762D1ADE96006FDC2F /* graal_isolate_dynamic.h */,
+				4042DC772D1ADE96006FDC2F /* libsaxon-pec-12.5.0.h */,
+				4042DC782D1ADE96006FDC2F /* libsaxon-pec-12.5.0_dynamic.h */,
+			);
+			name = graalvm;
+			path = ../Saxon.C.API/graalvm;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4042DC662D1ADDB1006FDC2F /* SaxonTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4042DC6E2D1ADDB1006FDC2F /* Build configuration list for PBXNativeTarget "SaxonTest" */;
+			buildPhases = (
+				4042DC632D1ADDB1006FDC2F /* Sources */,
+				4042DC642D1ADDB1006FDC2F /* Frameworks */,
+				4042DC652D1ADDB1006FDC2F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4042DC692D1ADDB1006FDC2F /* SaxonTest */,
+			);
+			name = SaxonTest;
+			packageProductDependencies = (
+			);
+			productName = SaxonTest;
+			productReference = 4042DC672D1ADDB1006FDC2F /* SaxonTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4042DC5F2D1ADDB1006FDC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4042DC662D1ADDB1006FDC2F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 4042DC622D1ADDB1006FDC2F /* Build configuration list for PBXProject "SaxonTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4042DC5E2D1ADDB1006FDC2F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4042DC682D1ADDB1006FDC2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4042DC662D1ADDB1006FDC2F /* SaxonTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4042DC632D1ADDB1006FDC2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4042DCA62D1ADE96006FDC2F /* XdmFunctionItem.cpp in Sources */,
+				4042DCA72D1ADE96006FDC2F /* SchemaValidator.cpp in Sources */,
+				4042DCA82D1ADE96006FDC2F /* Xslt30Processor.cpp in Sources */,
+				4042DCA92D1ADE96006FDC2F /* SaxonApiException.cpp in Sources */,
+				4042DCAB2D1ADE96006FDC2F /* SaxonCGlue.c in Sources */,
+				4042DCAC2D1ADE96006FDC2F /* XdmMap.cpp in Sources */,
+				4042DCAD2D1ADE96006FDC2F /* CythonExceptionHandler.cpp in Sources */,
+				4042DCAF2D1ADE96006FDC2F /* XdmValue.cpp in Sources */,
+				4042DCB02D1ADE96006FDC2F /* XdmNode.cpp in Sources */,
+				4042DCB12D1ADE96006FDC2F /* XdmItem.cpp in Sources */,
+				4042DCB22D1ADE96006FDC2F /* XdmArray.cpp in Sources */,
+				4042DCB42D1ADE96006FDC2F /* XQueryProcessor.cpp in Sources */,
+				4042DCB52D1ADE96006FDC2F /* XdmAtomicValue.cpp in Sources */,
+				4042DCB62D1ADE96006FDC2F /* SaxonCXPath.c in Sources */,
+				4042DCB92D1ADE96006FDC2F /* XsltExecutable.cpp in Sources */,
+				4042DCBA2D1ADE96006FDC2F /* SaxonCProcessor.c in Sources */,
+				4042DCBB2D1ADE96006FDC2F /* XPathProcessor.cpp in Sources */,
+				4042DCBD2D1ADE96006FDC2F /* SaxonProcessor.cpp in Sources */,
+				4042DCBE2D1ADE96006FDC2F /* DocumentBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4042DC6C2D1ADDB1006FDC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4042DC6D2D1ADDB1006FDC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4042DC6F2D1ADDB1006FDC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77N5ZH2WQP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Saxon.C.API,
+					../Saxon.C.API/graalvm,
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					../Saxon.C.API,
+					../Saxon.C.API/graalvm,
+				);
+			};
+			name = Debug;
+		};
+		4042DC702D1ADDB1006FDC2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77N5ZH2WQP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Saxon.C.API,
+					../Saxon.C.API/graalvm,
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					../Saxon.C.API,
+					../Saxon.C.API/graalvm,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4042DC622D1ADDB1006FDC2F /* Build configuration list for PBXProject "SaxonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4042DC6C2D1ADDB1006FDC2F /* Debug */,
+				4042DC6D2D1ADDB1006FDC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4042DC6E2D1ADDB1006FDC2F /* Build configuration list for PBXNativeTarget "SaxonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4042DC6F2D1ADDB1006FDC2F /* Debug */,
+				4042DC702D1ADDB1006FDC2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4042DC5F2D1ADDB1006FDC2F /* Project object */;
+}
