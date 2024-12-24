@@ -391,6 +391,8 @@ public:
   // get current working directory
   const char *getcwd() { return cwdXT.c_str(); }
 
+  bool getJustInTimeCompilation() { return jitCompilation; }
+
   /**
    * Set a property specific to the processor in use.
    * XsltProcessor: set serialization properties (names start with '!' i.e. name
