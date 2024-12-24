@@ -91,7 +91,7 @@ public:
    * relative URIs appearing within an XPath expression, for example a relative
    * URI passed as an argument to the doc() function. If no static base URI is
    * supplied, then the current working directory is used.
-   * @param uriStr
+   * @param uriStr base URI
    */
   void setBaseURI(const char *uriStr);
 
