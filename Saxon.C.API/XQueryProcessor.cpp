@@ -333,7 +333,7 @@ const char *XQueryProcessor::executeQueryToString(const char *infilename,
                                              : (void *)processorDataRef));
 
   if (result == nullptr) {
-    throw SaxonApiException();
+    throw SaxonApiException("result is nil");
   }
   if (processorDataRef > 0) {
     j_handles_destroy(SaxonProcessor::sxn_environ->thread,

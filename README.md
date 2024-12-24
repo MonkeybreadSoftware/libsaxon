@@ -20,5 +20,7 @@ Changes:
 * Fixed warning about implicit conversations
 * Added override for virtual methods
 * Added getcwd functions
-
+* Added getProperties methods
+* Added getoutputFile method
+* Added getConfigProperties method
 
