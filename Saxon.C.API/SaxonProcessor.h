@@ -351,7 +351,7 @@ public:
    *
    * @param input  - the input array of int values
    * @param length - the number of items in the array
-   * @return an XdmArray whose members are xs:boolean values corresponding
+   * @return an XdmArray whose members are xs:int values corresponding
    * one-to-one with the input
    */
   XdmArray *makeArray(int *input, int length);
@@ -361,7 +361,7 @@ public:
    *
    * @param input  - the input array of long values
    * @param length - the number of items in the array
-   * @return an XdmArray whose members are xs:boolean values corresponding
+   * @return an XdmArray whose members are xs:long values corresponding
    * one-to-one with the input
    */
   XdmArray *makeArray(long long *input, int length);
